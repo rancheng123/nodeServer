@@ -13,7 +13,17 @@
               方法： node server.js
         3. 调用您的接口
 
-              在
+              在您的项目中调用 你自己定义的接口，如：
+
+                 //根据用户Id 获取用户详情
+                 $.ajax({
+                     url: 'http://localhost:8333/user/getUserInfoById',
+                     data: '{"id":3}',
+                     type: 'post',
+                     dataType: 'json'
+                 }).done(function (data) {
+                 });
+
 
 */
 
