@@ -1,8 +1,14 @@
 var http = require('http');
 var request = http.request({
 
+
+
     //前三个是在拼url
     //url = host + port + path
+
+    //完整路径
+    //http://192.168.0.44:8084/qjlianlian/front/v1/user/getUserInfo
+
     host: '192.168.0.44',     //网站域名或 IP 地址
     port: '8084',                  //端口
     path: '/qjlianlian/front/v1/user/getUserInfo',    //相对路径(相对于根，包括查询数据)
